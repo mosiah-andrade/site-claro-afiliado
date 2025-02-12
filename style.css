@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+@font-face {
+    font-family: 'Creato Display Black';
+    src: url('fonts/creato-display.black.otf') format('opentype');
+    font-weight: 900; /* Peso extra negrito */
+    font-style: normal;
+}
+
+/* Aplicando a fonte ao site */
+body {
+    font-family: 'Creato Display Black', sans-serif;
+}
+
+:root{
+    --red: #D6291E;
+    --yellow: #FEC721;
+    --gray: ##EDEBEB;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--red);
+    align-items: center;
+    padding: 20px;
+}
+button{
+    margin: 5px;
+    padding: 10px 25px;
+    border: none;
+    color: var(--red);
+    font-weight: 600;
+    border-radius: 20px;
+    font-size: 1.02rem;
+}
+button{
+    transform: scale(1.01);
+    transition: all .5s;
+}
+#cta{
+    background-color: var(--yellow);
+    color: black;
+}
+#hero{
+    width: 100%;
+    height: 500px;
+    background-color: #883a34;
+    position: relative;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: linear-gradient(90deg, #a50505, #2d0d0d);
+        padding: 20px;
+        border-radius: 10px;
+        color: white;
+        height: 500px;
+    }
+
+    .left {
+        margin-left: 150px;
+        width: 280px;
+    }
+
+    .left h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .robot {
+        width: 400px;
+        position: absolute;
+        top: 0px;
+        left: 40%;
+    }
+
+    .right {
+        background: #3a1616;
+        padding: 20px;
+        margin-right: 170px;
+        border-radius: 10px;
+        text-align: center;
+        width: 250px;
+        height: 500px;
+        h2{
+            border: solid aliceblue 1px;
+            padding: 15px;
+            border-radius: 15px;
+            font-size: 2.2rem;
+        }
+        #globo{
+            border: solid aliceblue 1px;
+            border-radius: 15px;
+            padding: 15px;
+            font-size: 2rem;
+
+        }
+    }
+
+    .badge {
+        background: red;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: bold;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    .offer-box {
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+        color: black;
+        margin-top: 10px;
+    }
+
+    .offer-box .old-price {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .offer-box .old-price del {
+        color: #666;
+    }
+
+    .offer-box .new-price {
+        font-size: 28px;
+        font-weight: bold;
+        color: red;
+    }
+
+    .offer-box .new-price span {
+        font-size: 18px;
+    }
+
+    .offer-box .discount {
+        font-size: 12px;
+        color: black;
+        margin-top: 5px;
+    }
+
+    .button {
+        background: var(--yellow);
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px  50px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+}
+#planos{
+    background-color: var(--gray);
+    position: absolute;
+    top: 550px; /* Ajuste para sobrepor parcialmente */
+    z-index: 2;
+    display: flex;
+    width: 80%;
+    left: 10%;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    img{
+        max-width: 250px;
+        box-shadow: black 1px 1px 5px;
+        border-radius: 15px;
+    }
+    img:hover{
+        transform: scale(1.05);
+        opacity: 20%;
+        transition: all .50s;
+        cursor: pointer;
+    }
+}
+footer p{
+    width:100%;
+    margin-top: 100px;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
