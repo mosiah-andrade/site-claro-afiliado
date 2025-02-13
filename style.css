@@ -13,12 +13,13 @@
 /* Aplicando a fonte ao site */
 body {
     font-family: 'Creato Display Black', sans-serif;
+    background-color: var(--gray);
 }
 
 :root{
     --red: #D6291E;
     --yellow: #FEC721;
-    --gray: ##EDEBEB;
+    --gray: #EDEBEB;
 }
 
 header{
@@ -37,7 +38,9 @@ button{
     border-radius: 20px;
     font-size: 1.02rem;
 }
-button{
+button:hover{
+    cursor: pointer;
+    opacity: 99%;
     transform: scale(1.01);
     transition: all .5s;
 }
@@ -159,9 +162,8 @@ button{
     }
 }
 #planos{
-    background-color: var(--gray);
     position: absolute;
-    top: 550px; /* Ajuste para sobrepor parcialmente */
+    top: 550px; 
     z-index: 2;
     display: flex;
     width: 80%;
@@ -175,15 +177,110 @@ button{
     }
     img:hover{
         transform: scale(1.05);
-        opacity: 20%;
         transition: all .50s;
         cursor: pointer;
     }
 }
+
+#first{
+    background-color: aliceblue;
+    margin: 500px auto 0 ;
+    width: 100%;
+    padding: 50px 200px;
+    img{
+        width: 100%;
+        box-shadow: black 1px 1px 5px;
+        border-radius: 15px;
+    }
+    img:hover{
+        transform: scale(1.05);
+        transition: all .50s;
+        cursor: pointer;
+    }
+    h1{
+        margin-bottom: 20px;
+        font-size: 3rem;
+        text-align: center;
+
+        span{
+            color: var(--red);
+        }
+    }
+    p{
+        width: 70%;
+        margin: auto;
+        margin-bottom: 70px;
+        text-align: center;
+        font-size: 1.2rem;
+        span{
+            font-weight: 600;
+        }
+    }
+    #grid{
+        justify-content: center;
+        display: grid;
+        grid-template-rows: 115px 115px 115px 115px;
+        grid-template-columns: 700px 250px ;
+        gap: 30px;
+        #img{
+            grid-row: 1/5;
+            grid-column: 2;
+            
+        }
+        #box{
+            grid-column: 1/2;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+
+        }
+        #box div{
+            width: 300px;
+            height: 90px;
+            background-color: var(--gray);
+            box-shadow: black 1px 1px 5px;
+            border-radius: 5px;
+        }
+    }
+}
+#second{
+    
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    img{
+        width: 100%;
+        box-shadow: black 1px 1px 5px;
+        border-radius: 15px;
+    }
+    img:hover{
+        transform: scale(1.05);
+        transition: all .50s;
+        cursor: pointer;
+    }
+    div{
+        
+        margin: auto 40px;
+
+        h2{
+            font-size: 1.7rem;
+            margin-bottom: 50px;
+        }
+        h3{
+            color: var(--red);
+        }
+    }
+    img{
+        width: 250px;
+    }
+}
 footer p{
+    background-color: var(--red);
+    padding-top: 70px;
+    padding-bottom: 20px;
     width:100%;
-    margin-top: 100px;
-    position: fixed;
-    bottom: 0;
     text-align: center;
+    
 }
