@@ -29,6 +29,9 @@ header{
     background-color: var(--red);
     align-items: center;
     padding: 1vw;
+    button{
+        margin: 0%;
+    }
 }
 button{
     margin: 1vw;
