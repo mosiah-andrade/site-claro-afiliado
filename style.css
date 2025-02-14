@@ -14,6 +14,7 @@
 body {
     font-family: 'Creato Display Black', sans-serif;
     background-color: var(--gray);
+    
 }
 
 :root{
@@ -27,10 +28,10 @@ header{
     justify-content: space-around;
     background-color: var(--red);
     align-items: center;
-    padding: 20px;
+    padding: 1vw;
 }
 button{
-    margin: 5px;
+    margin: 1vw;
     padding: 10px 25px;
     border: none;
     color: var(--red);
@@ -50,14 +51,16 @@ button:hover{
 }
 #hero{
     width: 100%;
+    
     height: 500px;
-    background-color: #883a34;
+    background: linear-gradient(90deg, #a50505, #2d0d0d);
     position: relative;
     .container {
+        max-width: 1700px;
+        margin: auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background: linear-gradient(90deg, #a50505, #2d0d0d);
         padding: 20px;
         border-radius: 10px;
         color: white;
@@ -180,6 +183,7 @@ button:hover{
         transition: all .50s;
         cursor: pointer;
     }
+    
 }
 
 #first{
@@ -209,13 +213,14 @@ button:hover{
     p{
         width: 70%;
         margin: auto;
-        margin-bottom: 70px;
+        margin-bottom: 20px;
         text-align: center;
         font-size: 1.2rem;
         span{
             font-weight: 600;
         }
     }
+    
     #grid{
         justify-content: center;
         display: grid;
@@ -232,16 +237,39 @@ button:hover{
             display: flex;
             flex-wrap: wrap;
             gap: 30px;
-
+           
         }
+        
         #box div{
-            width: 300px;
+            width: 250px;
             height: 90px;
-            background-color: var(--gray);
+            text-align: center;
+            padding: 10px;
+            background-color: whitesmoke;
             box-shadow: black 1px 1px 5px;
             border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p{
+
+                margin: 0;
+            }
         }
     }
+}
+button{
+    background: var(--yellow);
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px  50px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: auto;
+    margin-right: 350px;
+    margin-top: 10px;
 }
 #second{
     
@@ -276,6 +304,41 @@ button:hover{
         width: 250px;
     }
 }
+#tvbox{
+    background-color: aliceblue;
+    justify-content: center;
+    padding: 50px 200px ;
+    display: grid;
+    grid-template-columns: 550px 350px;
+    img{
+        max-width: 1700px;
+        margin: auto;
+        width: 420px;
+        grid-column: 1/2;
+        box-shadow: 1px 1px 20px black;
+    }
+    div{
+        max-width: 1700px;
+        margin: auto;
+        h3{
+            font-size: 2rem;
+            span{
+                color: var(--red);
+            }
+        }
+        p{
+            margin-top: 20px;
+            width: 350px;
+        }
+    }
+    span{
+        color: var(--red);
+    }
+    #preco{
+        font-weight: bold;
+        font-size: 2.4rem;
+    }
+}
 footer p{
     background-color: var(--red);
     padding-top: 70px;
@@ -283,4 +346,15 @@ footer p{
     width:100%;
     text-align: center;
     
+}
+footer div p{
+    background-color: var(--gray);
+    padding: 40px;
+    font-size: 10px;
+    opacity: 50%;
+}
+.priv{
+    text-align: left;
+    padding: 10px 100px;
+    font-size: 10px;
 }
