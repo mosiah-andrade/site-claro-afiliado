@@ -403,6 +403,7 @@ footer div p{
         }
     }
     #hero{
+        overflow: hidden;
         .container {
             max-width: none;
             align-items: center;
@@ -417,8 +418,9 @@ footer div p{
         }
     
         .robot {
-            width: 300px;
-            top: 125px;
+            width: 450px;
+            top: -60px;
+            overflow:hidden;
         }
     }
     #first{
