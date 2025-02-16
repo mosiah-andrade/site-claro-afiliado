@@ -368,7 +368,10 @@ footer div p{
     header{
         height: 100px;
         padding: 0vw;
+        font-size: .7rem;
+
         img{    
+            width: 60px;
             margin-left: 15px;
         }
     }
@@ -380,9 +383,8 @@ footer div p{
     }
     button{
         margin: 20px;
-        padding: 5px 45px;
+        padding: 5px 55px;
         font-weight: 500;
-        font-size: .6rem;
         height: 30px;
     }
     button:hover{
@@ -397,6 +399,7 @@ footer div p{
     #planos{
         display: flex;
         flex-wrap: wrap;
+        top: 600px;
         img{
             width: 120px;
             margin: 2vw;
