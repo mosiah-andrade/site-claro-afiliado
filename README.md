@@ -6,6 +6,7 @@ Este é o repositório do site **Claro Afiliado**, uma plataforma para divulgaç
 O site está disponível para acesso público no seguinte endereço:
 
 [https://mosiah-andrade.github.io/site-claro-afiliado/](https://mosiah-andrade.github.io/site-claro-afiliado/)
+
 ![image](https://github.com/user-attachments/assets/766a4934-00d2-40ca-b03c-906c1496602b)
 
 
