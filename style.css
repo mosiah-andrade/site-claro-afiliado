@@ -49,6 +49,12 @@ button{
     border-radius: 20px;
     font-size: 1.02rem;
 }
+#fixo{
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 6px 30px;
+    margin: 0;
+}
 button:hover{
     cursor: pointer;
     opacity: 99%;
@@ -397,9 +403,11 @@ footer div p{
         font-size: .7rem;
 
         img{    
-            width: 60px;
             margin-left: 15px;
         }
+    }
+    header div p{
+        font-size: 20px;
     }
     #menu{
         display: flex;
@@ -409,15 +417,22 @@ footer div p{
     }
     button{
         margin: 20px;
-        padding: 5px 55px;
+        height: 50px;
+        padding: 5px 25px;
         font-weight: 500;
-        height: 30px;
     }
+    #menu a{ font-size: 20px;}
     button:hover{
         cursor: pointer;
         opacity: 99%;
         transform: scale(1.01);
         transition: all .5s;
+    }
+    #fixo{
+        font-weight: 600;
+        font-size: 1rem;
+        padding: 6px 30px;
+        margin: 0;
     }
     #cta{
         display:none
@@ -427,10 +442,10 @@ footer div p{
         text-align: center;
         background-color: aliceblue;
         padding-bottom: 100px;
-        font-size: 2rem;
+        font-size: 3rem;
     }
     #planos div{
-        top: 1620px;
+        top: 1720px;
         width: 100%;
         left: 0%;
         img{
@@ -549,5 +564,13 @@ footer div p{
             width: 90%;
             align-self: center;
         }
+    }
+    #contato{
+        width: 90vw;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 20px;
     }
 }
