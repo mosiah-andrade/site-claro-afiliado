@@ -27,6 +27,9 @@ header a, button a{
     list-style: none;
     color: black;
 }
+span{
+    color: var(--red);
+}
 header{
     display: flex;
     justify-content: space-around;
