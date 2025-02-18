@@ -22,7 +22,11 @@ body {
     --yellow: #FEC721;
     --gray: #EDEBEB;
 }
-
+header a, button a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
 header{
     display: flex;
     justify-content: space-around;
@@ -363,7 +367,7 @@ button{
 }
 footer p{
     background-color: var(--red);
-    padding-top: 70px;
+    padding-top: 0px;
     padding-bottom: 20px;
     width:100%;
     text-align: center;
