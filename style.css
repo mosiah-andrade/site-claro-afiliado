@@ -394,7 +394,7 @@ footer div p{
     font-size: 10px;
 }
 #contato{
-    width: 90vw;
+    width: 20vw;
     gap: 10px;
     display: flex;
     flex-direction: column;
@@ -572,5 +572,8 @@ footer div p{
             align-self: center;
         }
     }
-    
+    #contato{
+        width: 90vw;
+        
+    }
 }
